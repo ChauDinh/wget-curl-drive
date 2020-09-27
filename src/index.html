@@ -10,28 +10,39 @@
 </head>
 
 <body>
-  <div class="container wrapper block fixed">
-    <h1>🤖 We are wget-curl-drive</h1>
-    <p>👉 A download tool converts Google Drive links (sharable) to
-      wget/curl</p>
-    <br>
-    <form class="form">
-      <div class="block">
-        <input type="text" id="drive-link" placeholder="Step 1: enter your drive link...">
+  <main>
+    <div class="container wrapper block fixed">
+      <h1>🤖 We are wget-curl-drive</h1>
+      <p>👉 A download tool converts Google Drive links (sharable) to
+        wget/curl</p>
+      <button class="block accent demo-btn">Click here for demo!</button>
+      <div class="video">
+        <button class="block accent close-video">X close</button>
+        <iframe width="560" height="315" id="video-iframe" src="https://www.youtube.com/embed/-tNMxwWSN_M?enablejsapi=1"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe> </div>
+      <br>
+      <form class="form">
+        <div class="block">
+          <input name="link" type="text" id="drive-link" placeholder="Step 1: enter your drive link...">
+        </div>
+        <br />
+        <div class="block">
+          <input name="name" type="text" id="name-file" placeholder="Step 2: choose name for file..." />
+        </div>
+        <br />
+        <button type="submit" class="block accent submit-btn">Let's Go</button>
+      </form>
+    </div>
+    <div class="result">
+      <h4>👇 Result:</h4>
+      <div class="block fixed result-text">
+        <div id="result-text"></div>
+        <button class="block accent copy-btn">Copy to clipboard</button>
       </div>
-      <br />
-      <div class="block">
-        <input type="text" id="name-file" placeholder="Step 2: choose name for file..." />
-      </div>
-      <br />
-      <button type="submit" class="block accent submit-btn">Let's Go</button>
-    </form>
-  </div>
-  <h4>👇 Result:</h4>
-  <div class="block fixed result">
-    <div class="result-text"></div>
-    <button class="block accent">Copy to clipboard</button>
-  </div>
+    </div>
+  </main>
   <footer>Created by amanlearnscode.com with ❤️ & ☕️</footer>
   <script src="./main.js"></script>
 </body>
